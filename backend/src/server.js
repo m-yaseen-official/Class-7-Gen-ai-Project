@@ -3,6 +3,7 @@ import { connectDatabase } from "./config/db.js";
 import { config } from "./config/env.js";
 
 await connectDatabase();
+
 app.listen(config.port, () => {
   console.log(`Downbot API listening on port ${config.port}`);
 });
